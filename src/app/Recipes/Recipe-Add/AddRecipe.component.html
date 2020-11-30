@@ -1,0 +1,36 @@
+<mat-card>
+    <form (submit)="submitRecipe(recipeForm)" #recipeForm="ngForm">
+        <mat-form-field >
+            <input 
+                matInput 
+                required 
+                name="name" 
+                type="text" 
+                placeholder="Recipe's Name" 
+                ngModel
+            >
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput
+                name="descripition" 
+                type="text" 
+                required 
+                placeholder="Recipe's Descripition"
+                ngModel
+                >
+            </textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <input 
+                name="imageURL" 
+                type="text" 
+                matInput 
+                required 
+                placeholder="Recipe's URL"
+                ngModel
+            >
+        </mat-form-field>
+            <button mat-raised-button type="submit" >Add</button>
+        
+    </form>
+</mat-card>

@@ -1,0 +1,20 @@
+<mat-grid-list cols="3" rowHeight="2:1" *ngIf="recipes.length>0">
+    <mat-grid-tile *ngFor="let recipe of recipes">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    {{recipe.name}}
+                </mat-card-title>
+            </mat-card-header>
+
+            <img mat-card-md-image src="{{recipe.imageURL}}" alt="no image bbe" />
+            <mat-card-content>
+                <p>{{recipe.descripition}}</p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<h1 *ngIf="recipes.length<=0">
+    no recipes
+</h1>

@@ -1,0 +1,14 @@
+mat-card{
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: rgba(118, 213, 219, 0.5);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
