@@ -4,8 +4,8 @@
 - This project is frontend application that enable the user to view recipes and add more.
   
 ## ToDo:
-- [ ] Enable Adding Recipes. 
-- [ ] View All Recipes.
+- [X] Enable Adding Recipes. 
+- [X] View All Recipes.
 - [ ] View Specific Recipe.
 - [ ] Upload Recipe's Image.
 - [ ] Add Accounts.
