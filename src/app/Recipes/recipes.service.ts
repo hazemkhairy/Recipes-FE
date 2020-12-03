@@ -27,8 +27,9 @@ export class RecipesService {
         return this.recipesUpdated.asObservable();
     }
     addRecipe = (recipe: Recipe) => {
-        this.http.post<{ message: string }>('http://localhost:3000/api/addRecipe', recipe)
+        this.http.post<{ message: string, id: any }>('http://localhost:3000/api/recipes', recipe)
             .subscribe((data) => {
+                recipe.id = data.id;
                 this.recipes.push(recipe);
                 this.recipesUpdated.next([...this.recipes])
             }

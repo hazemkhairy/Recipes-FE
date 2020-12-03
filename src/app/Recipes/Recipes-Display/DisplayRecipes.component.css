@@ -1,0 +1,11 @@
+.card:hover{
+    background-color: rgba(233, 227, 227, 0.959) !important;
+}
+.grow:hover{
+    transform: scale(1.15);
+}
+.grow{ transition: all .3s ease-in-out;}
+
+.recipeImage{
+    height: 225px;
+}

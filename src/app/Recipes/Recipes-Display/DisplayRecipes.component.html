@@ -1,19 +1,23 @@
-<mat-grid-list cols="3" rowHeight="2:1" *ngIf="recipes.length>0">
-    <mat-grid-tile *ngFor="let recipe of recipes">
-        <mat-card>
-            <mat-card-header>
-                <mat-card-title>
-                    {{recipe.name}}
-                </mat-card-title>
-            </mat-card-header>
+<div class="container" *ngIf="recipes.length>0">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4 col-md-6 col-sm-8" *ngFor="let recipe of recipes">
 
-            <img mat-card-md-image src="{{recipe.imageURL}}" alt="no image bbe" />
-            <mat-card-content>
-                <p>{{recipe.descripition}}</p>
-            </mat-card-content>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+            <div
+                class="m-3 p-1 card grow  justify-content-center align-items-center shadow bg-white rounded-lg border-light">
+
+                <img class="card-img-top rounded recipeImage" src="{{recipe.imageURL}}" alt="no image bbe" />
+                <div class="card-body w-100">
+
+                    <h1 class="card-title">
+                        {{recipe.name}}
+                    </h1>
+                    <h5>{{recipe.descripition}}</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <h1 *ngIf="recipes.length<=0">
     no recipes
