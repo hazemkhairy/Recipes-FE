@@ -6,7 +6,7 @@
 ## ToDo:
 - [X] Enable Adding Recipes. 
 - [X] View All Recipes.
-- [ ] Added header.
+- [ ] Add header.
 - [ ] View Specific Recipe.
 - [ ] Upload Recipe's Image.
 - [ ] Add Accounts.
